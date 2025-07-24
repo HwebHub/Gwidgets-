@@ -1,0 +1,36 @@
+{
+  "name": "Workspace Dashboard",
+  "short_name": "WorkDash",
+  "scope": "/",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    { "src": "icons/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ],
+  "widgets": [
+    {
+      "name": "Gmail Preview",
+      "description": "Unread Workspace emails",
+      "tag": "gmail",
+      "ms_ac_template": "/widgets/gmail-template.json",
+      "data": "/api/gmail-data.json",
+      "update": 300
+    },
+    {
+      "name": "Calendar Agenda",
+      "description": "Next events",
+      "tag": "calendar",
+      "ms_ac_template": "/widgets/calendar-template.json",
+      "data": "/api/calendar-data.json",
+      "update": 600
+    },
+    {
+      "name": "Keep Notes",
+      "description": "Pinned Keep notes",
+      "tag": "keep",
+      "ms_ac_template": "/widgets/keep-template.json",
+      "data": "/api/keep-data.json",
+      "update": 300
+    }
+  ]
+}
